@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="row mt-4">
+    <h3>Eğitim düzeyinizi seçiniz</h3>
+    <select name="cars" class="form-control form-control-lg" (change)="dropdownChanged($event.target)" id="cars">
+      <option value="ilkokulmezunu">Seçim Yapınız</option>
+      <option value="ilkokulmezunu">İlk Okul Mezunu</option>
+      <option value="lisemezunu">Lise Mezunu</option>
+      <option value="universitemezunu">Üniversite Mezunu</option>
+      <option value="yukseklisansmezunu">Yüksek Lisans Mezunu</option>
+    </select>
+  </div>
+  <div class="row" style="margin-top: 50px">
+    <div class="col-6">
+      <p>
+        Adeta gelecekten bildiriyoruz: 'Sürücüsüz' Tesla, 15 dakika Alman
+        polisinden kaçtı
+      </p>
+      <p>
+        Otoyolda saatte 110 kilometre hızla seyreden araç ve onu kovalayan Alman
+        otoban polisi. Polis aracın yanına geldiğinde şaşırıyor: Direksiyonu
+        bırakmış, uyuyan şoför ve direksiyona bağlı bir ağırlık! Ancak bilim
+        kurgu filmlerinde yaşanabileceğini düşüneceğiniz bir sahne, geçtiğimiz
+        günlerde Almanya'da gerçek oldu. Alman polisi, otoyolda saatte 110
+        kilometre hızla giderken, otomatik pilota alınmış Tesla'nın "uyuyakalan"
+        sürücüsünü durdurmak için oldukça zor anlar yaşadı. Bavyera'da, Bayern
+        Polisi'nin yaptığı açıklamaya göre, Çarşamba günü A70 Otobanı'nda trafik
+        kontrolü için durması işaret edilen Tesla aracın sürücüsü yoluna devam
+        edince, 15 dakika süren bir kovalamaca yaşandı. Ancak sonradan ortaya
+        çıktı ki, dur uyarısına uymayan tam olarak "sürücü" sayılmazdı...
+      </p>
+      <p>Sürücü polisin 'dur' ihtarına uymadı</p>
+      <p>
+        Polisin yaptığı basın açıklamasında şu bilgiler yer alıyor: "A70
+        üzerinde, Bamberg'den, Bayreuth'a doğru yol alan sürücüye öğlen saat 12
+        sularında devriye gezen trafik polisi tarafından, trafik kontrolü için
+        durması işaret edildi. Sürücü durmasına yönelik yapılan görsel ve sesli
+        uyarılara yanıt vermedi." Tesla'nın o sırada saatte 110 kilometre hızla
+        yoluna devam ettiği ve tüm bunların ise aracın sürücüsünün o sırada
+        uykuya dalmış olmasından kaynaklandığı açıklandı.
+      </p>
+    </div>
+    <div class="col-6">
+      <div class="row"></div>
+      <div class="row"></div>
+      <textarea
+        name=""
+        (keydown)="preventBackspace($event)"
+        (change)="changeTextData($event)"
+        id="source"
+        cols="100"
+        rows="20"
+        download="code.txt"
+      ></textarea>
+
+      <!-- <input  placeholder="Try write Something and enter backspace..."> -->
+    </div>
+  </div>
+  <div class="row justify-content-center mt-4">
+    <a class="btn btn-primary" id="link" download="code.txt" (click)="submit()">Kaydet</a>
+  </div>
+</div>
